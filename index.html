@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="SALMAN FARSHI — Premium Payment Center">
+  <title>SALMAN FARSHI — Premium Payment Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow glow-one"></div>
+  <div class="bg-glow glow-two"></div>
+
+  <main class="container">
+    <header class="hero">
+      <div class="brand-mark">SF</div>
+      <div>
+        <div class="eyebrow">🛡️ PREMIUM PAYMENT CENTER</div>
+        <h1>SALMAN <span>FARSHI</span></h1>
+        <p>Fast • Secure • Trusted</p>
+      </div>
+    </header>
+
+    <section class="notice">
+      <span>✓</span>
+      <div><strong>সহজে পেমেন্ট করুন</strong><small>নিচের পছন্দের মাধ্যমটি নির্বাচন করুন এবং নম্বর কপি করুন।</small></div>
+    </section>
+
+    <section id="payment-list" class="grid"></section>
+
+    <section class="bank-card">
+      <div class="bank-head">
+        <div class="bank-icon">IB</div>
+        <div>
+          <span class="tag">BANK ACCOUNT</span>
+          <h2>Islami Bank Bangladesh PLC.</h2>
+        </div>
+      </div>
+      <div class="bank-info">
+        <div><small>ACCOUNT NAME</small><strong id="bank-name"></strong></div>
+        <div><small>ACCOUNT NUMBER</small><strong id="bank-number"></strong></div>
+        <div><small>BRANCH</small><strong id="bank-branch"></strong></div>
+      </div>
+      <button class="copy-btn" id="bank-copy">▣ &nbsp; COPY ACCOUNT</button>
+    </section>
+
+    <section class="security">
+      <div>🛡️ <strong>SECURE TRANSACTION</strong></div>
+      <div>🔒 YOUR MONEY IS SAFE</div>
+      <div>✓ TRUSTED & RELIABLE</div>
+    </section>
+
+    <footer>© <span id="year"></span> SALMAN FARSHI • Premium Payment Center</footer>
+  </main>
+
+  <div id="toast" class="toast">Copied successfully</div>
+  <script src="script.js"></script>
+</body>
+</html>
