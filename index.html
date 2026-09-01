@@ -1,63 +1,51 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b1220">
-  <meta name="description" content="SALMAN FARSHI — Premium Payment Center">
-  <title>SALMAN FARSHI — Premium Payment Center</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SALMAN FARSHI — Premium Payment Center</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="bg-glow glow-one"></div>
-  <div class="bg-glow glow-two"></div>
+<header class="hero">
+  <div class="badge">🛡️ PREMIUM PAYMENT CENTER</div>
+  <h1>SALMAN FARSHI</h1>
+  <p>Fast • Secure • Trusted</p>
+</header>
 
-  <main class="container">
-    <header class="hero">
-      <div class="brand-mark">SF</div>
-      <div>
-        <div class="eyebrow">🛡️ PREMIUM PAYMENT CENTER</div>
-        <h1>SALMAN <span>FARSHI</span></h1>
-        <p>Fast • Secure • Trusted</p>
-      </div>
-    </header>
+<main class="container">
+  <section class="cards">
+    <div class="card"><h2>💗 bKash Personal</h2><div class="name">MD SAGOR HOSSEN</div><div class="number">01312660965</div><div class="actions"><button onclick="copyText('01312660965')">COPY</button><a href="tel:01312660965">SEND MONEY</a></div></div>
+    <div class="card"><h2>🟠 Nagad Personal</h2><div class="name">MD SAGOR HOSSEN</div><div class="number">01710314010</div><div class="actions"><button onclick="copyText('01710314010')">COPY</button><a href="tel:01710314010">SEND MONEY</a></div></div>
+    <div class="card"><h2>🔵 Rocket Personal</h2><div class="name">MD SAGOR HOSSEN</div><div class="number">016219785927</div><div class="actions"><button onclick="copyText('016219785927')">COPY</button><a href="tel:016219785927">SEND MONEY</a></div></div>
+    <div class="card"><h2>🟣 Upay Personal</h2><div class="name">MD SAGOR HOSSEN</div><div class="number">01312660965</div><div class="actions"><button onclick="copyText('01312660965')">COPY</button><a href="tel:01312660965">SEND MONEY</a></div></div>
+    <div class="card"><h2>💗 bKash Personal</h2><div class="name">MD SAGOR HOSSEN</div><div class="number">01910057892</div><div class="actions"><button onclick="copyText('01910057892')">COPY</button><a href="tel:01910057892">SEND MONEY</a></div></div>
+    <div class="card"><h2>🟠 Nagad</h2><div class="name">MD SAGOR HOSSEN</div><div class="number">01910057892</div><div class="actions"><button onclick="copyText('01910057892')">COPY</button><a href="tel:01910057892">SEND MONEY</a></div></div>
+    <div class="card"><h2>💙 CellFin Personal</h2><div class="name">MD SAGOR HOSSEN</div><div class="number">01312660965</div><div class="actions"><button onclick="copyText('01312660965')">COPY</button><a href="tel:01312660965">SEND MONEY</a></div></div>
+    <div class="card"><h2>🟢 mCash Personal</h2><div class="name">MD SAGOR HOSSEN</div><div class="number">01312660965</div><div class="actions"><button onclick="copyText('01312660965')">COPY</button><a href="tel:01312660965">SEND MONEY</a></div></div>
+  </section>
 
-    <section class="notice">
-      <span>✓</span>
-      <div><strong>সহজে পেমেন্ট করুন</strong><small>নিচের পছন্দের মাধ্যমটি নির্বাচন করুন এবং নম্বর কপি করুন।</small></div>
-    </section>
+  <section class="bank card">
+    <h2>🏦 Islami Bank Bangladesh PLC</h2>
+    <div class="row"><span>Account Name</span><strong>MD SAGOR HOSSEN</strong></div>
+    <div class="row"><span>Account Number</span><strong id="account">20504620200213814</strong></div>
+    <div class="row"><span>Branch</span><strong>KALIAKAIR BRANCH</strong></div>
+    <button class="copy-account" onclick="copyText('20504620200213814')">COPY ACCOUNT</button>
+  </section>
 
-    <section id="payment-list" class="grid"></section>
+  <section class="security">
+    <div>🛡️ <b>SECURE TRANSACTION</b></div>
+    <div>🔒 <b>YOUR MONEY IS SAFE</b></div>
+    <div>✓ <b>TRUSTED & RELIABLE</b></div>
+  </section>
 
-    <section class="bank-card">
-      <div class="bank-head">
-        <div class="bank-icon">IB</div>
-        <div>
-          <span class="tag">BANK ACCOUNT</span>
-          <h2>Islami Bank Bangladesh PLC.</h2>
-        </div>
-      </div>
-      <div class="bank-info">
-        <div><small>ACCOUNT NAME</small><strong id="bank-name"></strong></div>
-        <div><small>ACCOUNT NUMBER</small><strong id="bank-number"></strong></div>
-        <div><small>BRANCH</small><strong id="bank-branch"></strong></div>
-      </div>
-      <button class="copy-btn" id="bank-copy">▣ &nbsp; COPY ACCOUNT</button>
-    </section>
+  <section class="contact">
+    <a href="https://www.facebook.com/share/1DZGrLtEiF/" target="_blank">Facebook</a>
+    <a href="tel:01312660965">Call</a>
+  </section>
+</main>
 
-    <section class="security">
-      <div>🛡️ <strong>SECURE TRANSACTION</strong></div>
-      <div>🔒 YOUR MONEY IS SAFE</div>
-      <div>✓ TRUSTED & RELIABLE</div>
-    </section>
-
-    <footer>© <span id="year"></span> SALMAN FARSHI • Premium Payment Center</footer>
-  </main>
-
-  <div id="toast" class="toast">Copied successfully</div>
-  <script src="script.js"></script>
+<footer>© 2026 SALMAN FARSHI • Premium Payment Center</footer>
+<script src="script.js"></script>
 </body>
 </html>
